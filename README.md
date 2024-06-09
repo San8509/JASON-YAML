@@ -1,5 +1,5 @@
 # JASON-YAML introduccion en GitHub
-# Informacion de contenido
+# Guia de contenido
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
 - [JSON](#json)
   - [¿Qué es JSON?](#qué-es-json)
@@ -15,7 +15,7 @@
   
  
 > [!CAUTION]
-> Warning o Caution si queremos señalar algun tipo de anuncio importante.
+> Warning o Caution si queremos señalar algun tipo de anuncio importante en algun punto del archivo.
 
 ## ¿Qué es JSON?
 JSON (JavaScript Object Notation) es un formato de texto ligero para el intercambio de datos. Es fácil de leer y escribir para los humanos, y fácil de analizar y generar para las máquinas. JSON se basa en una subconjunto del lenguaje de programación JavaScript, pero es independiente de cualquier lenguaje de programación específico. Es ampliamente utilizado en la transmisión de datos entre un servidor y una aplicación web, sirviendo como una alternativa más sencilla a XML.
@@ -27,8 +27,10 @@ Un archivo JSON se utiliza para almacenar y transportar datos estructurados. Los
 ### Strings
 ```
 {
-  "nombre": "Juan",
-  "ciudad": "Madrid"
+  "Nombre": "Luna",
+  "Ciudad": "Madrid"
+  "DNI": "L23425243"
+  "Address": "#4523 5ta Ave"
 }
 ```
 
@@ -36,29 +38,29 @@ Un archivo JSON se utiliza para almacenar y transportar datos estructurados. Los
 ```
 {
   "persona": {
-    "nombre": "Ana",
-    "edad": 30,
-    "ciudad": "Barcelona"
+    "marca": "Mercedez Benz",
+    "año de creacion": 1926,
+    "ciudad": "Aspach, Alemania"
   }
 }
 ```
 ### Arreglos
 ```
 {
-  "frutas": ["Manzana", "Banana", "Naranja"]
+  "ups": ["AMDRyzen 5 Series", "Intel Core I7", "SSD 2T Portable"]
 }
 ```
 ### Booleanos
 ```
 {
-  "esActivo": true,
-  "esAdmin": false
+  "esActivo": false,
+  "esAdmin": true
 }
 ```
 ### Null
 ```
 {
-  "apellido": null
+  "developer": null
 }
 ```
 
@@ -83,17 +85,17 @@ YAML (YAML Ain't Markup Language) es un formato de serialización de datos legib
 YAML utiliza una sintaxis basada en indentación para definir la estructura de los datos, sin el uso de corchetes o comas. Aquí hay un ejemplo básico de un archivo YAML:
 ```
 persona:
-  nombre: Ana
-  edad: 30
-  ciudad: Barcelona
+  marca: Honda
+  modelo: Hornet 600F
+  ciudad: I+D de Roma
 
-frutas:
-  - Manzana
-  - Banana
-  - Naranja
+marcas:
+  - Kawasaki
+  - Ducati
+  - Harley Davison
 
 esActivo: true
-apellido: null
+contrato: null
 ```
 
 # Diferencias entre JSON y YAML
@@ -103,6 +105,7 @@ apellido: null
 - Compatibilidad: JSON es un subconjunto de JavaScript y es ampliamente soportado en aplicaciones web, mientras que YAML es más común en archivos de configuración.
 
 # Bibliografía
-- [JSON](https://blog.hubspot.es/website/que-es-json).
-- [YAML](https://www.redhat.com/es/topics/automation/what-is-yaml).
 - [Diferencias entre JSON y YAML](https://aws.amazon.com/es/compare/the-difference-between-yaml-and-json/).
+- [YAML](https://www.redhat.com/es/topics/automation/what-is-yaml)
+- [JSON](https://blog.hubspot.es/website/que-es-json).
+
